@@ -9,6 +9,9 @@
   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
   crossorigin="anonymous">
 
+  <!-- Adding CDN for Github unicode icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Adding custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -33,17 +36,18 @@
       <div class="row">
         <div class="col-sm-12" id="specialCharType">
           <div>
+            <input type="checkbox" name="chooseLowerCaseChar" id="chooseLowerCaseChar" value="Lowercase characters"> <label for="chooseSpecialChar">Lowercase characters</label>
+          </div>
+          <div>
+            <input type="checkbox" name="chooseUpperCaseChar" id="chooseUpperCaseChar" value="Uppercase characters"> <label for="chooseSpecialChar">Uppercase characters</label>
+          </div>         
+          <div>
             <input type="checkbox" name="chooseSpecialChar" id="chooseSpecialChar" value="Special character" checked> <label for="chooseSpecialChar">Special characters</label>
           </div>
           <div>
             <input type="checkbox" name="chooseNumChar" id="chooseNumChar" value="Numeric characters"> <label for="chooseSpecialChar">Numeric characters</label>
           </div>
-          <div>
-            <input type="checkbox" name="chooseLowerCaseChar" id="chooseLowerCaseChar" value="Lowercase characters"> <label for="chooseSpecialChar">Lowercase characters</label>
-          </div>
-          <div>
-            <input type="checkbox" name="chooseUpperCaseChar" id="chooseUpperCaseChar" value="Uppercase characters"> <label for="chooseSpecialChar">Uppercase characters</label>
-          </div>
+
         </div>
       </div>
       <hr>
@@ -56,6 +60,13 @@
         </div>
       </div>
     </main>
+    <aside>
+      <div class="githubLink">
+        <p style="margin-right: 5px;">Source: </p>
+        <a href="https://github.com/deenuy/UofT_password_gen" style="margin-right: 5px; color: black;">Github</a>
+        <i style="font-size:24px" class="fa">&#xf09b;</i>
+      </div>
+    </aside>
     <footer>
       <nav class="navbar fixed-bottom" id="footer">
           © Copyright - Deenu's Portfolio Work

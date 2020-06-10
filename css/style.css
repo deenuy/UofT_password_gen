@@ -51,3 +51,10 @@ textarea {
     border-top-color: lightgrey;
     border-top-width: thin;
 }
+
+.githubLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 5px;
+}

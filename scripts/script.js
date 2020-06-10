@@ -88,19 +88,18 @@ function genRandomPasswd() {
                 }
             );
         }
-
         return getPasswdStr;
     }
 }
 
-
 // function to copy to clipboard
 function copyToClipboard() {
     var selectResultArea = document.getElementById('result').childNodes[0];
+    console.log(selectResultArea);
+    var selectResult = document.querySelector('#result');
+    selectResult.select();
 
-    if (selectResultArea ==  '') {
-        document.getElementById('result').childNodes[0];
-        console.log(document.getElementById('result').childNodes[0])
+    if (selectResultArea !=  '') {
         document.execCommand('copy');
         console.log("INFO: Password is successfully copied to clipboard");
     }
